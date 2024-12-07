@@ -1,0 +1,124 @@
+.config-settings {
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #34495e;
+    font-size: 32px; /* Increased font size */
+    letter-spacing: 1.5px;
+    font-weight: 600;
+  }
+  
+  .settings-section {
+    margin-bottom: 35px;
+    padding: 25px 30px;
+    border: 1px solid #dcdde1;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .settings-section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .settings-section h2 {
+    margin-bottom: 25px;
+    font-size: 24px; /* Increased font size */
+    color: #1abc9c;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-size: 18px; /* Increased font size */
+    font-weight: 500;
+    color: #2d3436;
+  }
+  
+  input, select {
+    padding: 12px;
+    font-size: 18px; /* Increased font size */
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus, select:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 10px rgba(26, 188, 156, 0.4);
+    outline: none;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  
+  .save-button {
+    display: block;
+    margin: 35px auto;
+    padding: 14px 35px;
+    font-size: 20px; /* Increased font size */
+    color: #fff;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .save-button:hover {
+    background-color: #16a085;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .save-button:active {
+    transform: translateY(3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .config-settings {
+      padding: 25px;
+    }
+  
+    .settings-section {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 28px; /* Adjusted for smaller screens */
+    }
+  
+    .settings-section h2 {
+      font-size: 22px; /* Adjusted for smaller screens */
+    }
+  
+    .save-button {
+      padding: 12px 28px;
+      font-size: 18px; /* Adjusted for smaller screens */
+    }
+  }
+  

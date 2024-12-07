@@ -1,0 +1,14 @@
+.layout {
+    display: flex;
+  }
+  
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+  }
+  .layout .content {
+    margin-top: 60px; /* Add space to prevent overlap with Navbar */
+    margin-left: 250px; /* Account for the sidebar width */
+    padding: 20px; /* Add padding for content spacing */
+}

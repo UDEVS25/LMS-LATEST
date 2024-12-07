@@ -1,0 +1,72 @@
+.navbar {
+    width: 100%; /* Full width */
+    height: 70px; /* Increase height for a broader look */
+    background-color: #34495e; /* Slightly lighter background color for elegance */
+    color: white; /* Text color */
+    padding: 10px 30px; /* Add more padding for spacing */
+    position: fixed; /* Fix it to the top of the page */
+    top: 0; /* Align at the top */
+    z-index: 1000; /* Ensure it stays above other elements */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out logo/title and menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+.components{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1200px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.navbar ul {
+    display: flex; /* Align items horizontally */
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    gap: 25px; /* Increase spacing between items */
+}
+
+.navbar ul li {
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Make text bolder */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Link color */
+    padding: 8px 15px; /* Add padding for a button-like feel */
+    border-radius: 5px; /* Slightly round corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and click effects */
+}
+
+.navbar ul li a:hover {
+    background-color: #1abc9c; /* Change background on hover */
+    color: white; /* Keep text white */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.navbar ul li a:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+.navbar .logo {
+    font-size: 24px; /* Larger font size for logo/title */
+    font-weight: bold; /* Make it stand out */
+    color: #1abc9c; /* Add a pop of color for the logo */
+}
+
+.alerts-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: -30px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: grey;
+    color: white;
+}
