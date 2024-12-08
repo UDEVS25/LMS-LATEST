@@ -1,162 +1,162 @@
+/* Styling for the students section */
 .students-section {
     padding: 20px;
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin: 20px auto;
-    transition: transform 0.3s ease;
-}
-
-.students-section:hover {
-    transform: translateY(-3px);
-}
-
-h2 {
-    color: #2c3e50;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
     text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1.8rem; /* Increased size */
-}
-
-.student-list {
+    color: #0a886e;
     margin-bottom: 30px;
-}
-
-.student-list table {
+  }
+  
+  /* Search Bar Styling */
+  .search-student input {
+    padding: 10px;
     width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.student-list table th, 
-.student-list table td {
-    padding: 14px; /* Increased padding */
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    font-size: 1rem; /* Increased size */
-}
-
-.student-list table th {
-    background-color: #34495e;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .search-student input:focus {
+    border-color: #0a886e;
+    outline: none;
+  }
+  
+  /* Add Student Button */
+  .add-student-btn {
+    background-color: #0a886e;
     color: white;
-    text-transform: uppercase;
-    font-size: 1.1rem; /* Increased size */
-}
-
-.student-list table tr:nth-child(even) {
-    background-color: #f8f8f8;
-}
-
-.student-list table tr:hover {
-    background-color: #f1f1f1;
-    transition: background-color 0.2s ease;
-}
-
-.add-student-form {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .add-student-btn:hover {
+    background-color: #0a886e;
+  }
+  
+  /* Modal Styling */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.add-student-form h3 {
-    margin-bottom: 20px;
-    color: #2c3e50;
-    text-transform: capitalize;
-    font-size: 1.5rem; /* Increased size */
-}
-
-.add-student-form .form-group {
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-content .form-group {
     margin-bottom: 15px;
-}
-
-.add-student-form .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #34495e;
-    text-transform: capitalize;
-    font-size: 1rem; /* Increased size */
-}
-
-.add-student-form .form-group input,
-.add-student-form select {
+  }
+  
+  .modal-content input,
+  .modal-content select {
+    padding: 8px;
+    margin-top: 5px;
     width: 100%;
-    padding: 12px; /* Increased padding */
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem; /* Increased size */
-    background-color: #fdfdfd;
-}
-
-.add-student-form button {
-    padding: 14px 20px; /* Increased padding */
-    background-color: #1abc9c;
+  }
+  
+  .modal-content button {
+    padding: 10px;
+    background-color: #0a886e;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 1.1rem; /* Increased size */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    width: 100%;
-}
-
-.add-student-form button:hover {
-    background-color: #16a085;
-    transform: scale(1.05);
-}
-
-.add-student-form button:active {
-    transform: scale(0.95);
-}
-
-.add-student-form select {
-    margin-bottom: 15px;
-}
-
-.student-list table th, .student-list table td {
-    text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .students-section {
-        padding: 15px;
-    }
-
-    table th,
-    table td {
-        padding: 10px;
-        font-size: 0.9rem; /* Adjusted size */
-    }
-
-    .add-student-form {
-        padding: 15px;
-    }
-
-    .add-student-form button {
-        font-size: 1rem; /* Adjusted size */
-    }
-}
-
-.search-student {
-    margin-bottom: 20px;
-    text-align: center;
-}
-  
-.search-student input {
-    padding: 12px; /* Increased padding */
-    width: 80%;
-    max-width: 400px;
-    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-top: 10px;
     border-radius: 5px;
-    font-size: 1rem; /* Increased size */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  }
+  
+  .modal-content button:hover {
+    background-color: #0a886e;
+  }
+  
+  .modal-content button[type="button"] {
+    background-color: #f44336;
+  }
+  
+  .modal-content button[type="button"]:hover {
+    background-color: #e53935;
+  }
+  
+  /* Student List Styling */
+  .student-list {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .student-list table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+  
+  .student-list th,
+  .student-list td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .student-list th {
+    background-color: #0a886e;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .student-list tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .student-list tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .student-list tbody tr td {
+    color: #333;
+  }
+  
+  .student-list tbody tr td:first-child {
+    font-weight: bold;
+  }
+  
+  .student-list p {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    padding: 20px 0;
+  }
+  
