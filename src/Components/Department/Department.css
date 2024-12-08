@@ -132,3 +132,80 @@ h2 {
         font-size: 1rem;
     }
 }
+/* Updated styles for the student list */
+.student-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.student-list h3 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.student-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.student-list ul li {
+    background-color: #f8f8f8;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student-list ul li:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.2s ease;
+}
+
+.student-list ul li .roll-number {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.student-list ul li .student-name {
+    flex-grow: 1;
+    margin-left: 10px;
+    color: #34495e;
+    font-weight: 500;
+}
+
+.student-list ul li .view-details-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.student-list ul li .view-details-btn:hover {
+    background-color: #2980b9;
+}
+
+.student-list ul li .view-details-btn:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .student-list ul li {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
