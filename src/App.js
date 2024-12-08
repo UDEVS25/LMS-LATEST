@@ -5,6 +5,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import ConfigSettings from './Components/ConfigSettings/ConfigSettings';
 import Student from './Components/Student/Student';
 import Department from './Components/Department/Department';
+import ExamSettings from './Components/ExamSettings/ExamSettings';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/config_settings" element={<ConfigSettings />} />
-          <Route path="/student" element={<Student/>}/>
-          <Route path="/department" element={<Department/>}/>
+          <Route path="/student" element={<Student />} />
+          <Route path="/department" element={<Department />} />
+          <Route path="/exam_settings" element={<ExamSettings />} />
           <Route path="/alerts" element={<h1>Alerts</h1>} />
         </Routes>
       </Layout>
