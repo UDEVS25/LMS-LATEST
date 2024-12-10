@@ -1,0 +1,112 @@
+.library-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .library-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .library-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .library-table th,
+  .library-table td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .library-table th {
+    background-color: #405d7a;
+    color: white;
+  }
+  
+  .library-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .library-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .status-available {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status-checkedout {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .rent-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .rent-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .rented-book-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #a4c1df;
+    border-left: 5px solid #405d7a;
+    border-radius: 8px;
+  }
+  
+  .rented-book-details h2 {
+    margin-top: 0;
+    color: #405d7a;
+  }
+  
+  .rented-book-details p {
+    margin: 5px 0;
+  }
+  
+  .rented-books {
+    margin-top: 20px;
+  }
+  
+  .rented-book {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .rented-book p {
+    margin: 5px 0;
+  }
+  
+  .return-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .return-button:hover {
+    background-color: #e60000;
+  }
+  
